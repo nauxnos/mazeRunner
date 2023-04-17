@@ -2,13 +2,17 @@
 #include "sensor.h"
 #include "control.h"
 
-void main() {
-	while(1) {
-		if(!space_left()) {
+void main()
+{
+	while (1)
+	{
+		if (!space_left())
+		{
 			right();
 		}
-		else {
+		else
+		{
 			stop();
 		}
 	}
-}
+} // 992
