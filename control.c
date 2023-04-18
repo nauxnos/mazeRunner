@@ -17,7 +17,7 @@ void straight()
 void left()
 {
     left_1 = 1;
-    left_2 = 0;
+    left_2 = 1;
     right_1 = 1;
     right_2 = 0;
     // delay(10000);
@@ -27,7 +27,7 @@ void right()
 {
     left_1 = 0;
     left_2 = 1;
-    right_1 = 0;
+    right_1 = 1;
     right_2 = 1;
     // delay(10000);
 }
