@@ -3,6 +3,6 @@
 
 extern int space_front();
 extern int space_right();
-extern int space_left();
+extern int space_left();	
 
-#endif /* FOO_H_INCLUDED */
+#endif /* SENSOR_H_INCLUDED */
