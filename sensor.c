@@ -9,7 +9,7 @@ sbit Trig_Left = P3^2;
 
 int time, dis;
 
-void delay(int t)//This function provide delay in us uS.
+void delay(int t)// delay(uS)
 {
 	while(t--);
 }
