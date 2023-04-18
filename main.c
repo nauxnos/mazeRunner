@@ -6,13 +6,29 @@ void main()
 {
 	while (1)
 	{
-		if (!space_left())
+		if (!space_right())
 		{
 			right();
+			straight();
 		}
 		else
 		{
-			stop();
+			if (!space_front)
+			{
+				straight();
+			}
+			else
+			{
+				if (!space_left)
+				{
+					left();
+					straight();
+				}
+				else
+				{
+					turn_around();
+				}
+			}
 		}
 	}
 } // 992
