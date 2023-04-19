@@ -8,6 +8,7 @@ void main()
 	{
 		if(!space_right()) {
 			right();
+			//straight();
 		}
 		else {
 			if (!space_front()) {
@@ -16,6 +17,7 @@ void main()
 			else {
 				if(!space_left()) {
 					left();
+					straight();
 				}
 				else {
 					stop();
