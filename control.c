@@ -43,4 +43,5 @@ void stop()
 void turn_around()
 {
     right();
+    right();
 }
