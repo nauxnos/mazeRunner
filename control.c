@@ -3,8 +3,10 @@
 
 sbit left_1 = P1^0;
 sbit left_2 = P1^1;
+sbit enable_left = P1^4;
 sbit right_1 = P1^2;
 sbit right_2 = P1^3;
+sbit enable_right = P1^5;
 
 void straight()
 {
@@ -12,6 +14,7 @@ void straight()
     left_2 = 1;
     right_1 = 1;
     right_2 = 0;
+    
 }
 
 void left()
