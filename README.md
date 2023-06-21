@@ -13,3 +13,4 @@
 ## Nguyên lí hoạt động
 - Sử dụng 3 cảm biến siêu âm để phát hiện vật cảm
 - Xe chuyển động theo thứ tự ưu tiên: Xe luôn rẽ phải nếu không có vật cản sau đó là đi thẳng cuối cùng là rẽ trái, nếu cả 3 hướng đều có vật cản thì rẽ trái hoặc phải
+![Ảnh1](https://github.com/nauxnos/mazeRunner/assets/108659094/1ec4b870-3829-4d76-8c5d-14ff6ca96a61)
