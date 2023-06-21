@@ -32,7 +32,7 @@ int space_front() {
 	TF0 = 0;
 	time = (TL0 + TH0*256)*1.085;// tinh thoi gian
 	dis = time/58;// tinh khoang cach (cm)
-	if (dis < 12) {
+	if (dis < 17) {
 		return 1;
 	}
 	else {
@@ -58,7 +58,7 @@ int space_right() {
 	TF0 = 0;
 	time = (TL0 + TH0*256)*1.085;// tinh thoi gian
 	dis = time/58;// tinh khoang cach (cm)
-	if (dis < 20) {
+	if (dis < 12) {
 		return 1;
 	}
 	else {
@@ -102,6 +102,26 @@ int dis_right() {
 	TL0=TH0=0;// reset bo nho timer
 	TR0=1;// bat dau timer
 	while(Echo_Right == 1)// cho echo ve 0
+	{
+		if(TF0 == 1)
+			break;
+	}
+	TR0=0;// dung bam gio
+	TF0 = 0;
+	time = (TL0 + TH0*256)*1.085;// tinh thoi gian
+	dis = time/58;// tinh khoang cach (cm)
+	return dis;
+}
+int dis_left() {
+	Echo_Left = 0;
+	TMOD = 0x01;
+	Trig_Left = 1;// trig len 1
+	delay(10);// delay
+	Trig_Left = 0;	
+	while(Echo_Left == 0);// cho echo len 1
+	TL0=TH0=0;// reset bo nho timer
+	TR0=1;// bat dau timer
+	while(Echo_Left == 1)// cho echo ve 0
 	{
 		if(TF0 == 1)
 			break;
